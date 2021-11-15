@@ -39,7 +39,7 @@ def main():
 
 def write_file_header():
 
-    with open(DATA_FILE, 'wb') as csvfile:
+    with open(DATA_FILE, 'w') as csvfile:
         fieldnames = ['Timestamp','SensorId','Location','Measurement','Value','Unit']
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
         writer.writeheader()
