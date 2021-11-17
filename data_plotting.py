@@ -36,7 +36,7 @@ print(df)
 # Plot data
 figure, axes = plt.subplots(2)
 
-figure.suptitle(f'Temperature and Relaive Humidity\n({QUERY_SENSOR} - {QUERY_DATE})')
+figure.suptitle(f'Temperature and Relative Humidity\n({QUERY_SENSOR} - {QUERY_DATE})')
 
 df.plot(kind='line',x='time',y='Temperature', ax=axes[0], color='tab:blue', legend=None)
 df.plot(kind='line',x='time',y='Relative Humidity', ax=axes[1], color='tab:orange', legend=None)
